@@ -6,7 +6,7 @@ T-Mobile TV GO/Mago Go playlist a EPG
 
 <p>
 
-<a href="https://www.xbmc-kodi.cz/showthread.php?pid=84767#pid84767">Fórum</a>
+<a href="https://www.xbmc-kodi.cz/prispevek-tv-go-playlist-v1-10-1">Fórum</a>
 
 <p>
 
