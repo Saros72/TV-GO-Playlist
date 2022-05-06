@@ -2,7 +2,7 @@
 
 <p>
 
-Python skript pro vygenerování XML souboru pro EPG
+T-Mobile TV GO/Mago Go playlist a EPG
 
 <p>
 
