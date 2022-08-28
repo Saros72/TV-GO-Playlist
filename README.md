@@ -10,6 +10,10 @@ T-Mobile TV GO/Mago Go playlist a EPG
 
 <p>
 
-<b><a href="https://www.paypal.me/petrsaros">DONATE</a></b>
+<b>DONATE</b>
+
+<a href="https://www.paypal.me/petrsaros">PayPal</a>
+
+<a href="https://revolut.me/petrsarka">Revolut</a> (@petrsarka)
 
 <p>
