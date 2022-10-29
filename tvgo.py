@@ -46,8 +46,9 @@ else:
 
 # zařízení
 if lng == "cz":
-    dev_type = "OTT_TV_WEBOS"
-    dev_name = "LGG50UP7500"
+    dev_type = "OTT_LINUX_4302"
+    dev_type = "OTT_ANDROID"
+    dev_name = "Xiaomi Mi 11"
 else:
     dev_type = "OTT_STB"
     dev_name = "KSTB6077"
