@@ -1,5 +1,5 @@
 #-*-coding:utf8;-*-
-#v1.16.0
+#v1.17.0
 
 
 # přihlašovací údaje
@@ -17,6 +17,11 @@ if lng == "cz":
 else:
     dev_type = "OTT_STB"
     dev_name = "KSTB6077"
+
+# Seznam vlastních kanálů
+# Seznam id kanálů oddělené čárkou (např.: "6054,6053,20,29")
+# Pro všechny kanály ponechte prázdné
+CHANNEL_IDS = ""
 
 # EPG
 # vygenerovat EPG
@@ -117,8 +122,13 @@ class TV_GO:
                 idd = n["channel"]["channelId"]
                 ids = ids + "," + str(idd)
                 id = "tm-" + str(idd) + "-" + encode(name).replace(" HD", "").lower().replace(" ", "-")
-                channels2.append(({"display-name": [(name, u"cs")], "id": str(id), "icon": [{"src": logo}]}))
-                channels.append((name, idd, logo))
+                if CHANNEL_IDS == "":
+                    channels2.append(({"display-name": [(name, u"cs")], "id": str(id), "icon": [{"src": logo}]}))
+                    channels.append((name, idd, logo))
+                else:
+                    if str(idd) in CHANNEL_IDS.split(","):
+                        channels2.append(({"display-name": [(name, u"cs")], "id": str(id), "icon": [{"src": logo}]}))
+                        channels.append((name, idd, logo))
             f = open(fp, "w", encoding="utf-8")
             f.write("#EXTM3U\n")
             for ch in channels:
